@@ -1,0 +1,151 @@
+{
+   "agent": "non-tls",
+   "behavior": "NON-STRICT",
+   "behaviorClose": "OK",
+   "case": 30,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send small text message, then send again with <b>RSV = 3</b>, then send Ping. Octets are sent in frame-wise chops. Octets are sent in octet-wise chops.",
+   "droppedByMe": false,
+   "duration": 2,
+   "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
+   "expected": {
+      "NON-STRICT": [],
+      "OK": [
+         [
+            "message",
+            "Hello, world!",
+            false
+         ]
+      ]
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": false,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: v/N7NtpkbNJsmGJSx+Seig==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:53:58 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: S8umoMtyis+VHzYDgYCHU9/NW+M=\r\n\r\n",
+   "id": "3.3",
+   "isServer": false,
+   "localCloseCode": null,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": null,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {},
+   "rxOctetStats": {
+      "199": 1
+   },
+   "started": "2021-07-03T16:53:58.453Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "1": 2,
+      "9": 1
+   },
+   "txOctetStats": {
+      "6": 1,
+      "19": 2,
+      "252": 1
+   },
+   "wasClean": false,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            252,
+            "474554202f6563686f2f6d65737361676520485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e382e322d ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            199,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         "d868956c",
+         null,
+         null,
+         true
+      ],
+      [
+         "TO",
+         [
+            19,
+            "818dd868956c900df900b744b51bb71af908f9"
+         ],
+         true
+      ],
+      [
+         "TF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         3,
+         "56c38153",
+         null,
+         null,
+         true
+      ],
+      [
+         "TF",
+         [
+            0,
+            ""
+         ],
+         9,
+         true,
+         0,
+         "f682c51a",
+         null,
+         null,
+         true
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "TO",
+         [
+            19,
+            "b18d56c381531ea6ed3f39efa12439b1ed3777"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            6,
+            "8980f682c51a"
+         ],
+         true
+      ]
+   ]
+}

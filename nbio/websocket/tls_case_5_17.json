@@ -1,0 +1,209 @@
+{
+   "agent": "tls",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 61,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Repeated 2x: Continuation Frame with FIN = true (where there is nothing to continue), then text Message fragmented into 2 fragments.",
+   "droppedByMe": false,
+   "duration": 2,
+   "expectation": "The connection is failed immediately, since there is no message to continue.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": false,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: E90J9VykOHczF662DX6G4g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:58 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: MYPsJ3Y9VBNSpVK0Kp41Ay1Erjo=\r\nServer: nbio\r\n\r\n",
+   "id": "5.17",
+   "isServer": false,
+   "localCloseCode": null,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": null,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {},
+   "rxOctetStats": {
+      "199": 1
+   },
+   "started": "2021-07-03T16:54:58.771Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 4,
+      "1": 2
+   },
+   "txOctetStats": {
+      "15": 6,
+      "252": 1
+   },
+   "wasClean": false,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            252,
+            "474554202f6563686f2f6d65737361676520485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e382e322d ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            199,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment1"
+         ],
+         0,
+         true,
+         0,
+         "f668e877",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8089f668e877901a89109b0d8603c7"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment2"
+         ],
+         1,
+         false,
+         0,
+         "d875a1f4",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "0189d875a1f4be07c093b510cf80ea"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment3"
+         ],
+         0,
+         true,
+         0,
+         "013bfa53",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8089013bfa5367499b346c5e942732"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment1"
+         ],
+         0,
+         true,
+         0,
+         "a5536873",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8089a5536873c3210914c836060794"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment2"
+         ],
+         1,
+         false,
+         0,
+         "2d179e3a",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "01892d179e3a4b65ff5d4072f04e1f"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment3"
+         ],
+         0,
+         true,
+         0,
+         "6f67b38f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "80896f67b38f0915d2e80202ddfb5c"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ]
+   ]
+}
