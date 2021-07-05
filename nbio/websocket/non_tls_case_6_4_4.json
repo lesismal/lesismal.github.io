@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Same as Case 6.4.2, but we send message not in 3 frames, but in 3 chops of the same message frame.\n<br><br>MESSAGE PARTS:<br>\nPART1 = cebae1bdb9cf83cebcceb5f4<br>\nPART2 = 90<br>\nPART3 = <br>\n",
    "droppedByMe": false,
-   "duration": 2003,
+   "duration": 2004,
    "expectation": "The first chop is accepted, we expect to timeout on the first wait. The 2nd chop should be rejected immediately (fail fast on UTF-8). If we timeout, we expect the connection is failed at least then, since the complete message payload is not valid UTF-8.",
    "expected": {
       "NON-STRICT": [
@@ -37,8 +37,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: l1ApzLQGeilbxqxhAY5I/Q==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:06 GMT\r\nConnection: Upgrade\r\nSec-Websocket-Accept: 3fN1p/ODIz/Z4tUc+y/n5vSbzAg=\r\nServer: nbio\r\nUpgrade: websocket\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: /X4UEvkL6frQY3TZp9rRRw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:35 GMT\r\nConnection: Upgrade\r\nSec-Websocket-Accept: BIp3a19SBk4FnSP8OGF0FHhCIS8=\r\nServer: nbio\r\nUpgrade: websocket\r\n\r\n",
    "id": "6.4.4",
    "isServer": false,
    "localCloseCode": null,
@@ -63,7 +63,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:54:06.764Z",
+   "started": "2021-07-05T07:51:35.561Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1
@@ -93,14 +93,14 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
          "TO",
          [
             6,
-            "0195e4829a33"
+            "01955e0587d2"
          ],
          false
       ],
@@ -108,7 +108,7 @@
          "TO",
          [
             12,
-            "2a387b8e5d4d19fd584c2fc7"
+            "90bf666fe7ca041ce2cb3226"
          ],
          false
       ],
@@ -125,7 +125,7 @@
          "TO",
          [
             1,
-            "74"
+            "ce"
          ],
          false
       ],
@@ -142,7 +142,7 @@
          "TO",
          [
             8,
-            "021a5680ebee5680"
+            "8507b73a6cf3b73a"
          ],
          false
       ],
@@ -155,7 +155,7 @@
          0,
          true,
          0,
-         "4b090fba",
+         "14f9ac12",
          null,
          null,
          false
@@ -164,7 +164,7 @@
          "TO",
          [
             6,
-            "80804b090fba"
+            "808014f9ac12"
          ],
          false
       ],

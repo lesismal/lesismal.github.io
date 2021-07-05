@@ -1,14 +1,14 @@
 {
    "agent": "non-tls",
-   "behavior": "UNIMPLEMENTED",
+   "behavior": "OK",
    "behaviorClose": "OK",
    "case": 339,
    "closedByMe": true,
    "createStats": true,
-   "createWirelog": false,
+   "createWirelog": true,
    "description": "Send 1000 compressed messages each of payload size 64, auto-fragment to 0 octets. Use default permessage-deflate offer.",
    "droppedByMe": false,
-   "duration": 3,
+   "duration": 502,
    "expectation": "Receive echo'ed messages (with payload as sent). Timeout case after 60 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: L/4bbAuaCz9C++BTkZApWQ==\r\nSec-WebSocket-Extensions: permessage-deflate; client_no_context_takeover; client_max_window_bits\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:56 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: ufaHZHS8vOlVIm6xNdlLUWfgy5s=\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: LMHoD/FlJjDTrhhsoP098Q==\r\nSec-WebSocket-Extensions: permessage-deflate; client_no_context_takeover; client_max_window_bits\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 08:00:03 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: aPoTUhcLc35V/zNTpk6ZrqUqJjw=\r\nSec-Websocket-Extensions: permessage-deflate; server_no_context_takeover; client_no_context_takeover\r\n\r\n",
    "id": "12.3.2",
    "isServer": false,
    "localCloseCode": 1000,
@@ -30,22 +30,63 @@
    "remoteCloseReason": null,
    "reportCompressionRatio": true,
    "reportTime": true,
-   "result": "Actual events differ from any expected.",
+   "result": "Ok, received all echo'ed messages in time.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
+      "2": 1000,
       "8": 1
    },
    "rxOctetStats": {
       "4": 1,
-      "199": 1
+      "66": 1000,
+      "301": 1
    },
-   "started": "2021-07-03T16:54:56.983Z",
-   "trafficStats": null,
+   "started": "2021-07-05T08:00:03.518Z",
+   "trafficStats": {
+      "incomingCompressionRatio": 1.0,
+      "incomingOctetsAppLevel": 64000,
+      "incomingOctetsWebSocketLevel": 64000,
+      "incomingOctetsWireLevel": 66000,
+      "incomingWebSocketFrames": 1000,
+      "incomingWebSocketMessages": 1000,
+      "incomingWebSocketOverhead": 0.03125,
+      "outgoingCompressionRatio": 0.975875,
+      "outgoingOctetsAppLevel": 64000,
+      "outgoingOctetsWebSocketLevel": 62456,
+      "outgoingOctetsWireLevel": 68456,
+      "outgoingWebSocketFrames": 1000,
+      "outgoingWebSocketMessages": 1000,
+      "outgoingWebSocketOverhead": 0.09606763161265532,
+      "preopenIncomingOctetsWireLevel": 301,
+      "preopenOutgoingOctetsWireLevel": 350
+   },
    "txFrameStats": {
+      "2": 1000,
       "8": 1
    },
    "txOctetStats": {
       "8": 1,
+      "47": 1,
+      "52": 1,
+      "54": 1,
+      "55": 3,
+      "57": 4,
+      "58": 2,
+      "59": 5,
+      "60": 4,
+      "61": 6,
+      "62": 13,
+      "63": 10,
+      "64": 21,
+      "65": 42,
+      "66": 67,
+      "67": 89,
+      "68": 135,
+      "69": 183,
+      "70": 205,
+      "71": 151,
+      "72": 41,
+      "73": 16,
       "350": 1
    },
    "wasClean": true,
@@ -65,13 +106,62 @@
       [
          "RO",
          [
-            199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            301,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
          "WLM",
          false
+      ],
+      [
+         "TI",
+         60
+      ],
+      [
+         "WLM",
+         true
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "0c49cc02",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "88820c49cc020fa1"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
       ]
    ]
 }

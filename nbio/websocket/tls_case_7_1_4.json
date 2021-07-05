@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message after sending a close frame.",
    "droppedByMe": false,
-   "duration": 1,
+   "duration": 3,
    "expectation": "Clean close with normal code. Text message ignored.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: fHHiXmyj8PuwEbj3t39WFQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:55:10 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: bu/ggc5LERfWcTBWJojmELu/NJk=\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 0Odh2klqScPpLmsQ17SIZw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 09:00:33 GMT\r\nSec-Websocket-Accept: 7/E5EeRIGDqNt+9W2g7WdzWlXl8=\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\n\r\n",
    "id": "7.1.4",
    "isServer": false,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "4": 1,
       "199": 1
    },
-   "started": "2021-07-03T16:55:10.422Z",
+   "started": "2021-07-05T09:00:33.095Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -70,7 +70,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -82,7 +82,7 @@
          8,
          true,
          0,
-         "314d326d",
+         "28d91467",
          null,
          null,
          false
@@ -91,7 +91,7 @@
          "TO",
          [
             8,
-            "8882314d326d32a5"
+            "888228d914672b31"
          ],
          false
       ],
@@ -104,7 +104,7 @@
          1,
          true,
          0,
-         "69487fd8",
+         "c32c2f4e",
          null,
          null,
          false
@@ -113,7 +113,7 @@
          "TO",
          [
             18,
-            "818c69487fd8212d13b4066828b71b241bf9"
+            "818cc32c2f4e8b494322ac0c7821b1404b6f"
          ],
          false
       ],

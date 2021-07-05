@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 7NW7oLRBl60lEQhNplPJuA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:08 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: ET26SNoxfr/UY8tLwKarG3mvNWw=\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: Gp3I0W97jocBjQ53nWECkQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:37 GMT\r\nSec-Websocket-Accept: SjCE+89EWhST11eJOvroRoXgwko=\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\n\r\n",
    "id": "6.13.1",
    "isServer": false,
    "localCloseCode": null,
@@ -39,7 +39,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:54:08.919Z",
+   "started": "2021-07-05T07:51:37.800Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1
@@ -66,7 +66,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -78,7 +78,7 @@
          1,
          true,
          0,
-         "4a6ac4d0",
+         "c6228da2",
          null,
          null,
          false
@@ -87,7 +87,7 @@
          "TO",
          [
             68,
-            "81be4a6ac4d08a4a05f0884a07f08e4a01f08c4a03f0824a0df0804a0ff0864a09f0844a0bf09a4a15f0984a17f09e4a11f09c4a13f0924a1df0904a1ff0964a ..."
+            "81bec6228da206024c8204024e820202488200024a820e0244820c0246820a0240820802428216025c8214025e821202588210025a821e0254821c0256821a02 ..."
          ],
          false
       ],

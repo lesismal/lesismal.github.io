@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 1 * 2**20 (1M).",
    "droppedByMe": false,
-   "duration": 339,
+   "duration": 325,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 6ZciDuW3M4F/2f8JOvfsdg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:09 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: wXx6yV5w8fzy8e3TkIRrYbetV6A=\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: YOlwMF9gKveQ1S1Z3js7SQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:38 GMT\r\nSec-Websocket-Accept: NMfHiKHVTN6psrnb3OxvDAi/E80=\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\n\r\n",
    "id": "9.1.3",
    "isServer": false,
    "localCloseCode": 1000,
@@ -33,17 +33,19 @@
    "result": "Received text message of length 1048576.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "0": 16,
+      "0": 255,
       "1": 1,
       "8": 1
    },
    "rxOctetStats": {
       "4": 1,
-      "66": 1,
       "199": 1,
-      "65536": 16
+      "33696": 1,
+      "36900": 1,
+      "61500": 1,
+      "65536": 14
    },
-   "started": "2021-07-03T16:54:09.472Z",
+   "started": "2021-07-05T07:51:38.652Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -72,7 +74,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -88,7 +90,7 @@
          8,
          true,
          0,
-         "a4a462a9",
+         "bb80be42",
          null,
          null,
          false
@@ -97,7 +99,7 @@
          "TO",
          [
             8,
-            "8882a4a462a9a74c"
+            "8882bb80be42b868"
          ],
          false
       ],

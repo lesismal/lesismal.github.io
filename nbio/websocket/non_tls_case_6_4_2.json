@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Same as Case 6.4.1, but in 2nd frame, we send only up to and including the octet making the complete payload invalid.\n<br><br>MESSAGE PARTS:<br>\nPART1 = cebae1bdb9cf83cebcceb5f4<br>\nPART2 = 90<br>\nPART3 = 8080656469746564<br>\n",
    "droppedByMe": false,
-   "duration": 2003,
+   "duration": 2004,
    "expectation": "The first frame is accepted, we expect to timeout on the first wait. The 2nd frame should be rejected immediately (fail fast on UTF-8). If we timeout, we expect the connection is failed at least then, since the complete message payload is not valid UTF-8.",
    "expected": {
       "NON-STRICT": [
@@ -37,8 +37,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: zyjpl8xgS8YhZ7cgrX8PhA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:02 GMT\r\nConnection: Upgrade\r\nSec-Websocket-Accept: OcqBpTh/9NnQW/N4+G6a2UuhEe4=\r\nServer: nbio\r\nUpgrade: websocket\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 8IRFcNOESzDRmbK/d743pQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:31 GMT\r\nConnection: Upgrade\r\nSec-Websocket-Accept: hYJDJjOPSOTaDCfdxYt2RTWQ9bU=\r\nServer: nbio\r\nUpgrade: websocket\r\n\r\n",
    "id": "6.4.2",
    "isServer": false,
    "localCloseCode": null,
@@ -63,7 +63,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:54:02.755Z",
+   "started": "2021-07-05T07:51:31.542Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -93,7 +93,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -105,7 +105,7 @@
          1,
          false,
          0,
-         "9c7721de",
+         "01a97f89",
          null,
          null,
          false
@@ -114,7 +114,7 @@
          "TO",
          [
             18,
-            "018c9c7721de52cdc06325b8a21020b9942a"
+            "018c01a97f89cf139e34b866fc47bd67ca7d"
          ],
          false
       ],
@@ -136,7 +136,7 @@
          0,
          false,
          0,
-         "b73eb67f",
+         "0d74a5e3",
          null,
          null,
          false
@@ -145,7 +145,7 @@
          "TO",
          [
             7,
-            "0081b73eb67f27"
+            "00810d74a5e39d"
          ],
          false
       ],
@@ -167,7 +167,7 @@
          0,
          true,
          0,
-         "69280605",
+         "db6ec3c1",
          null,
          null,
          false
@@ -176,7 +176,7 @@
          "TO",
          [
             14,
-            "808869280605e9a86361005c6361"
+            "8088db6ec3c15beea6a5b21aa6a5"
          ],
          false
       ],

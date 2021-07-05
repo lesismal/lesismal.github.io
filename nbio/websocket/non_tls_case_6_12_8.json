@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: cmxxppWgRvTWIEXu16czjQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:08 GMT\r\nConnection: Upgrade\r\nSec-Websocket-Accept: zAIobXFCocUZ3hx3A7AxsJQJYgw=\r\nServer: nbio\r\nUpgrade: websocket\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: CaVAfy4n42BcHRluLEHlLA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:37 GMT\r\nSec-Websocket-Accept: AyIpzueGOuGroBLAQVE+nDogkko=\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\n\r\n",
    "id": "6.12.8",
    "isServer": false,
    "localCloseCode": null,
@@ -39,7 +39,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:54:08.916Z",
+   "started": "2021-07-05T07:51:37.796Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1
@@ -66,7 +66,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -78,7 +78,7 @@
          1,
          true,
          0,
-         "a72c3184",
+         "5fddcd1c",
          null,
          null,
          false
@@ -87,7 +87,7 @@
          "TO",
          [
             69,
-            "81bfa72c318427adb30723a9b7032fa5bb0f2ba1bf0b37bda31733b9a7133fb5ab1f3bb1af1b078d9327038997230f859b2f0b819f2b179d8337139987331f95 ..."
+            "81bf5fddcd1cdf5c4f9fdb584b9bd7544797d3504393cf4c5f8fcb485b8bc7445787c3405383ff7c6fbffb786bbbf77467b7f37063b3ef6c7fafeb687babe764 ..."
          ],
          false
       ],

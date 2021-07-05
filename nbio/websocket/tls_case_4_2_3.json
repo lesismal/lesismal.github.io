@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved control <b>Opcode = 13</b>, then send Ping.",
    "droppedByMe": false,
-   "duration": 1,
+   "duration": 3,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: Ia4XrTEXKS7i8c0HyZN3eQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:58 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: 7iOYBFb1bpFjto2uLWpQRr22KiA=\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 3SdDyxI6kyePg2FP0kL4Xw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 09:00:19 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: zHyq+671RN7bPqzVWpo2GjZ9tjE=\r\n\r\n",
    "id": "4.2.3",
    "isServer": false,
    "localCloseCode": null,
@@ -45,7 +45,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:54:58.544Z",
+   "started": "2021-07-05T09:00:19.115Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -75,7 +75,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -87,7 +87,7 @@
          1,
          true,
          0,
-         "ef08d5d4",
+         "f890190d",
          null,
          null,
          false
@@ -96,7 +96,7 @@
          "TO",
          [
             19,
-            "818def08d5d4a76db9b88024f5a3807ab9b0ce"
+            "818df890190db0f5756197bc397a97e27569d9"
          ],
          false
       ],
@@ -109,7 +109,7 @@
          13,
          true,
          0,
-         "01dc322a",
+         "f4b83fbf",
          null,
          null,
          false
@@ -118,7 +118,7 @@
          "TO",
          [
             6,
-            "8d8001dc322a"
+            "8d80f4b83fbf"
          ],
          false
       ],
@@ -131,7 +131,7 @@
          9,
          true,
          0,
-         "4f3c4db8",
+         "d62bdfe1",
          null,
          null,
          false
@@ -140,7 +140,7 @@
          "TO",
          [
             6,
-            "89804f3c4db8"
+            "8980d62bdfe1"
          ],
          false
       ],

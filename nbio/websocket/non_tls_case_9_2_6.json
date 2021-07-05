@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 16 * 2**20 (16M).",
    "droppedByMe": false,
-   "duration": 790,
+   "duration": 1108,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 1Q3ZDSElN2ZpHn+op6BfvQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:20 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: ne542RJfUhBj0qHSip0Tmt7UUXU=\r\nServer: nbio\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: GMAXkokvcpPmuicoX2FGpw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:48 GMT\r\nSec-Websocket-Accept: LEPN+ZELC5Z8/cf8HkCLvsldKeY=\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\n\r\n",
    "id": "9.2.6",
    "isServer": false,
    "localCloseCode": 1000,
@@ -33,18 +33,18 @@
    "result": "Received binary message of length 16777216.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "0": 256,
+      "0": 4095,
       "2": 1,
       "8": 1
    },
    "rxOctetStats": {
       "4": 1,
       "199": 1,
-      "32771": 1,
-      "33793": 1,
+      "24456": 1,
+      "57464": 1,
       "65536": 255
    },
-   "started": "2021-07-03T16:54:20.739Z",
+   "started": "2021-07-05T07:51:48.614Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -73,7 +73,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -89,7 +89,7 @@
          8,
          true,
          0,
-         "c0007c79",
+         "02978e67",
          null,
          null,
          false
@@ -98,7 +98,7 @@
          "TO",
          [
             8,
-            "8882c0007c79c3e8"
+            "888202978e67017f"
          ],
          false
       ],

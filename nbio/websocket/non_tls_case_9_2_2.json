@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 256 * 2**10 (256k).",
    "droppedByMe": false,
-   "duration": 13,
+   "duration": 17,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: izOmzsD4rZyDVlTwZ4vXow==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:20 GMT\r\nConnection: Upgrade\r\nSec-Websocket-Accept: JfwEKDsTZsJaIqnxmKGITAijkog=\r\nServer: nbio\r\nUpgrade: websocket\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: AI7198Ej1AL2ibRW/Grb5w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:47 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: oBdcoI9Habt3IkbW8yKjJ92zb7w=\r\nServer: nbio\r\n\r\n",
    "id": "9.2.2",
    "isServer": false,
    "localCloseCode": 1000,
@@ -33,17 +33,19 @@
    "result": "Received binary message of length 262144.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "0": 4,
+      "0": 63,
       "2": 1,
       "8": 1
    },
    "rxOctetStats": {
       "4": 1,
-      "18": 1,
       "199": 1,
-      "65536": 4
+      "32800": 1,
+      "37028": 1,
+      "61500": 1,
+      "65536": 2
    },
-   "started": "2021-07-03T16:54:20.034Z",
+   "started": "2021-07-05T07:51:47.984Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -72,7 +74,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -88,7 +90,7 @@
          8,
          true,
          0,
-         "25150015",
+         "44aa878b",
          null,
          null,
          false
@@ -97,7 +99,7 @@
          "TO",
          [
             8,
-            "88822515001526fd"
+            "888244aa878b4742"
          ],
          false
       ],

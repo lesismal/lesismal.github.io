@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Repeated 2x: Continuation Frame with FIN = true (where there is nothing to continue), then text Message fragmented into 2 fragments.",
    "droppedByMe": false,
-   "duration": 2,
+   "duration": 13,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: E90J9VykOHczF662DX6G4g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:54:58 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: MYPsJ3Y9VBNSpVK0Kp41Ay1Erjo=\r\nServer: nbio\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9999\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: oMgajF89JQfnE9sUo97XhA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 09:00:19 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: G4ItWwwW4KQSij2iccvxddFvr8M=\r\n\r\n",
    "id": "5.17",
    "isServer": false,
    "localCloseCode": null,
@@ -38,7 +38,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:54:58.771Z",
+   "started": "2021-07-05T09:00:19.660Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -66,7 +66,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -78,7 +78,7 @@
          0,
          true,
          0,
-         "f668e877",
+         "389a2118",
          null,
          null,
          false
@@ -87,7 +87,7 @@
          "TO",
          [
             15,
-            "8089f668e877901a89109b0d8603c7"
+            "8089389a21185ee8407f55ff4f6c09"
          ],
          false
       ],
@@ -100,7 +100,7 @@
          1,
          false,
          0,
-         "d875a1f4",
+         "956b928c",
          null,
          null,
          false
@@ -109,7 +109,7 @@
          "TO",
          [
             15,
-            "0189d875a1f4be07c093b510cf80ea"
+            "0189956b928cf319f3ebf80efcf8a7"
          ],
          false
       ],
@@ -122,7 +122,7 @@
          0,
          true,
          0,
-         "013bfa53",
+         "05d7baab",
          null,
          null,
          false
@@ -131,7 +131,7 @@
          "TO",
          [
             15,
-            "8089013bfa5367499b346c5e942732"
+            "808905d7baab63a5dbcc68b2d4df36"
          ],
          false
       ],
@@ -144,7 +144,7 @@
          0,
          true,
          0,
-         "a5536873",
+         "85677d94",
          null,
          null,
          false
@@ -153,7 +153,7 @@
          "TO",
          [
             15,
-            "8089a5536873c3210914c836060794"
+            "808985677d94e3151cf3e80213e0b4"
          ],
          false
       ],
@@ -166,7 +166,7 @@
          1,
          false,
          0,
-         "2d179e3a",
+         "a2e7b9fa",
          null,
          null,
          false
@@ -175,7 +175,7 @@
          "TO",
          [
             15,
-            "01892d179e3a4b65ff5d4072f04e1f"
+            "0189a2e7b9fac495d89dcf82d78e90"
          ],
          false
       ],
@@ -188,7 +188,7 @@
          0,
          true,
          0,
-         "6f67b38f",
+         "782508d0",
          null,
          null,
          false
@@ -197,7 +197,7 @@
          "TO",
          [
             15,
-            "80896f67b38f0915d2e80202ddfb5c"
+            "8089782508d01e5769b7154066a44b"
          ],
          false
       ],

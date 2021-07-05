@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: WqAjfI0aiffhSe00xrnePg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Sat, 03 Jul 2021 16:53:58 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: 1mnw+D9QmexmpMcTyq+yfWr0E9E=\r\n\r\n",
+   "httpRequest": "GET /echo/message HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.2-0.10.9\r\nHost: localhost:9998\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 6yqSb/LoasIjCMSMOs48Og==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 0\r\nDate: Mon, 05 Jul 2021 07:51:27 GMT\r\nServer: nbio\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Accept: GeP2J3+mJlY5wAa/wsE3hJQkpjc=\r\n\r\n",
    "id": "4.2.3",
    "isServer": false,
    "localCloseCode": null,
@@ -45,7 +45,7 @@
    "rxOctetStats": {
       "199": 1
    },
-   "started": "2021-07-03T16:53:58.523Z",
+   "started": "2021-07-05T07:51:27.314Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -75,7 +75,7 @@
          "RO",
          [
             199,
-            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a205361742c20 ..."
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a436f6e74656e742d4c656e6774683a20300d0a446174653a204d6f6e2c20 ..."
          ]
       ],
       [
@@ -87,7 +87,7 @@
          1,
          true,
          0,
-         "dfec63e1",
+         "02bdc2ff",
          null,
          null,
          false
@@ -96,7 +96,7 @@
          "TO",
          [
             19,
-            "818ddfec63e197890f8db0c04396b09e0f85fe"
+            "818d02bdc2ff4ad8ae936d91e2886dcfae9b23"
          ],
          false
       ],
@@ -109,7 +109,7 @@
          13,
          true,
          0,
-         "2bb6a76d",
+         "d3ee62d1",
          null,
          null,
          false
@@ -118,7 +118,7 @@
          "TO",
          [
             6,
-            "8d802bb6a76d"
+            "8d80d3ee62d1"
          ],
          false
       ],
@@ -131,7 +131,7 @@
          9,
          true,
          0,
-         "04d83477",
+         "c2849929",
          null,
          null,
          false
@@ -140,7 +140,7 @@
          "TO",
          [
             6,
-            "898004d83477"
+            "8980c2849929"
          ],
          false
       ],
